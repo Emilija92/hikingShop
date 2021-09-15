@@ -26,3 +26,108 @@ $gray: #6c757d;
 $text: #4a4a4a;
 $borders: #eeeeee;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-size: var(--fontSize);
+    font-family: var(--bodyFont);
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--headings);
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-top: 5px solid var(--primary);
+}
+nav .logo i {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--black);
+}
+nav .logo {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: var(--headings);
+    margin: 20px 0 30px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+nav ul li a {
+    font-size: 1.1rem;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--black);
+}
+nav ul li a:hover {
+    color: var(--primary);
+    transition: var(--transition);
+}
+header {
+    background-image:  url(images/header.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+header .text {
+    background: rgba(255,255,255,.7);
+    margin-left: 250px;
+    text-align: left;
+    flex: 30%;
+    padding: 40px 20px 40px 40px;
+    text-align: left;
+}
+header .text h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+header .text h2::after {
+    content: "";
+    display: block;
+    background-color: var(--primary);
+    height: 3px;
+    width: 30px;
+    margin: 20px 0;
+}
+header .text p {
+    color: var(--black);
+    line-height: 1,1;
+    font-size: .9rem;
+}
+header .empty {
+    flex: 70%;
+}
+header button {
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+header button:hover {
+    cursor: pointer;
+    transition: var(--transition);
+    background-color: var(--black);
+}
