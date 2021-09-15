@@ -27,6 +27,9 @@ $text: #4a4a4a;
 $borders: #eeeeee;
 */
 
+/********************************
+BASIC STYLE
+********************************/
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +45,13 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: var(--headings);
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
+/**************************
+NAV
+**************************/
 nav {
     display: flex;
     flex-direction: column;
@@ -79,6 +89,9 @@ nav ul li a:hover {
     color: var(--primary);
     transition: var(--transition);
 }
+/**************************
+HEADER
+**************************/
 header {
     background-image:  url(images/header.jpg);
     background-position: top;
@@ -111,7 +124,7 @@ header .text h2::after {
 }
 header .text p {
     color: var(--black);
-    line-height: 1,1;
+    line-height: 1.4;
     font-size: .9rem;
 }
 header .empty {
@@ -130,4 +143,104 @@ header button:hover {
     cursor: pointer;
     transition: var(--transition);
     background-color: var(--black);
+}
+/**************************
+SUBSCRIBE
+**************************/
+.subscribe {
+    background-color: var(--primary);
+    padding: 80px 0;
+    text-align: center;
+}
+.subscribe h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.subscribe p {
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.subscribe input {
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    outline: none;
+}
+.subscribe input::placeholder {
+    color: var(--white);
+    opacity: .8;
+}
+.subscribe button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.subscribe button:hover {
+    background-color: var(--black);
+    color: white;
+    transition: var(--transition);
+    cursor: pointer;
+}
+/**************************
+FOOTER
+**************************/
+footer {
+    padding: 60px 0;
+    text-align: center;
+}
+.footerNavLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+.footerNavLinks .logo i {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--black);
+}
+.footerNavLinks .logo {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: var(--headings);
+    margin: 20px 0 30px 0;
+}
+
+.footerNavLinks ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.footerNavLinks ul li a {
+    font-size: .9rem;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--black);
+}
+.footerNavLinks ul li a:hover {
+    color: var(--primary);
+    transition: var(--transition);
+}
+footer .socialMedia {
+    margin-bottom: 60px;
+}
+footer .socialMedia i {
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-right: 10px;
+}
+footer .socialMedia i:hover {
+    color: var(--primary);
+    transition: var(--transition);
 }
