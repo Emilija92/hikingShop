@@ -173,8 +173,6 @@ FEATURED ITEMS
     font-weight: bold;
     margin: 10px 0;
 }
-
-
 /**************************
 SUBSCRIBE
 **************************/
@@ -274,4 +272,61 @@ footer .socialMedia i {
 footer .socialMedia i:hover {
     color: var(--primary);
     transition: var(--transition);
+}
+
+/**************************
+ABOUT US PAGE
+**************************/
+.aboutUs {
+    padding: 60px 0;
+}
+.aboutUs h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+.aboutUs h2::before {
+    content: "";
+    display: block;
+    background-color: var(--primary);
+    height: 4px;
+    width: 60px;
+    margin: 20px 0;
+}
+.aboutUs .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutUs .img {
+    flex: 30%;
+    margin-right: 30px;
+}
+.aboutUs .img img {
+    width: 100%;
+ 
+}
+.aboutUs .text {
+    flex: 65%;
+    
+}
+.aboutUs .text p {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.aboutUs hr {
+    display: block;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 30px 0;
+}
+.aboutUs .icons {
+    display: flex;
+}
+.aboutUs .icons h5 {
+    margin-right: 20px;
+}
+.aboutUs .icons i {
+    color: var(--primary);
+    margin-right: 20px;
+    font-weight: bold;
 }
