@@ -93,7 +93,7 @@ nav ul li a:hover {
 HEADER
 **************************/
 header {
-    background-image:  url(images/header.jpg);
+    background-image: url(/images/header.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,6 +144,37 @@ header button:hover {
     transition: var(--transition);
     background-color: var(--black);
 }
+/**************************
+FEATURED ITEMS
+**************************/
+.featuredItems {
+    padding: 100px 0;
+}
+.featuredItems h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+.featuredItems h2::before {
+    content: "";
+    display: block;
+    background-color: var(--primary);
+    height: 4px;
+    width: 60px;
+    margin: 20px 0;
+}
+.featuredItems .item {
+    border: 6px solid var(--lightgray);
+    padding: 30px;
+    border-radius: 10px;
+}
+.featuredItems .item p {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
 /**************************
 SUBSCRIBE
 **************************/
