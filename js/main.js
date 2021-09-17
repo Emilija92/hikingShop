@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
+        autoplay:true,
+        autoplaySpeed: 1000,
         margin:10,
         nav:true,
         responsive:{
